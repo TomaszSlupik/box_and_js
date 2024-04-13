@@ -1,0 +1,90 @@
+
+*, 
+*::after, 
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Zawsze czytam kod z góry do dołu, ale w przypadku specyficzności
+wygrywa: id, później klasa, a później tagi html !!!!
+ID uużywa się na unikalne elementy
+*/
+
+#myText {
+    color: darkcyan;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+span {
+    color: brown;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.myText {
+    color: bisque;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: darkcyan;
+    text-align: center;
+    margin: 0em 1em;
+}
+
+.boxText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btnColor {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 120px;
+    height: 30px;
+    background-color: green;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.bgChangeColorFirst {
+    background-color: dodgerblue;
+}
+
+.bgChangeColorSecond {
+    background-color: gray;
+}
